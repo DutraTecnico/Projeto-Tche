@@ -70,10 +70,10 @@
         <div>
             <fieldset>
                 <legend>Gestores</legend>
-                <form action="cadAbrigos.html">
+                <form action="cadastro.php" method="post" autocomplete="on">
                     <div>
                         <label for="iresponsavel">Responsáveis</label>
-                        <input type="text" name="responsavel" id="iresponsavel" required placeholder="Gestores do brigo (nome completo)">
+                        <input type="text" name="responsavel" id="iresponsavel" required placeholder="Gestores do brigo (nome completo)" autocomplete="name">
                     </div>
                     <div>
                         <input type="submit" value="Salvar nome">
@@ -82,12 +82,12 @@
                 </form>
                         </div>
                         <div>
-                <form action="cadAbrigos.html">
+                <form action="cadastro.php" method="post" autocomplete="on">
                     <fieldset>
                         <legend>Voluntarios</legend>
                         <div>
                             <label for="ivoluntario">Voluntarios</label>
-                            <input type="text" name="voluntario" id="ivoluntario" required placeholder="Voluntarios do abrigo (nome completo)">
+                            <input type="text" name="voluntario" id="ivoluntario" required placeholder="Voluntarios do abrigo (nome completo)" autocomplete="name">
                         </div>
                         <div>
                             <input type="submit" value="Salvar nome">
