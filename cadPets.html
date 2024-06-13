@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pet</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Pets</h1>
+    </header>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <div>
+                <label for="itipo">Tipo</label>
+                <input type="text" name="tipo" id="itipo" required minlength="2" maxlength="20" placeholder="Cão, Gato, Macaco">
+            </div>
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="2" maxlength="30" placeholder="Nome Completo">
+            </div>
+            <div>
+                Porte
+                <input type="radio" name="porte" id="igrande" checked>
+                <label for="igrande">Grande</label>
+                <input type="radio" name="porte" id="imedio">
+                <label for="imedio">Médio</label>
+                <input type="radio" name="porte" id="ipequeno">
+                <label for="ipequeno">Pequeno</label>
+            </div>
+            <div>
+                Sexo
+                <input type="radio" name="sexo" id="imacho" checked>
+                <label for="imacho">Macho</label>
+                <input type="radio" name="sexo" id="ifemea">
+                <label for="ifemea">Femea</label>
+            </div>
+            <div>
+                <label for="iidade">Idade</label>
+                <input type="number" name="idade" id="iidade" required min="0" placeholder="Numero">
+            </div>
+            <div>
+                <label for="idono">Dono</label>
+                <input type="text" name="dono" id="idono" required maxlength="30" placeholder="Nome completo">
+            </div>
+            <div>
+                Castrado
+                <input type="radio" name="castrado" id="isim" checked>
+                <label for="isim">Sim</label>
+                <input type="radio" name="castrado" id="inao">
+                <label for="inao">Não</label>
+            </div>
+            <div>
+                Agrassividade
+                <input type="radio" name="Agress" id="isimAgress" checked>
+                <label for="isimAgress">Sim</label>
+                <input type="radio" name="Agress" id="inaoAgress">
+                <label for="inaoAgress">Não</label>
+            </div>
+            <div>
+                <label for="iobs">Observação</label>
+                <input type="text" name="obs" id="iobs" maxlength="200" placeholder="Opcional">
+            </div>
+            <div>
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
