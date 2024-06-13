@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Voluntario e Gestor</title>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de Voluntario/Gestor</h1>
+    </header>
+    <main>
+        <form action="cadastro.php" method="post" autocomplete="on">
+            <div>
+                <label for="inome">Nome</label>
+                <input type="text" name="nome" id="inome" required minlength="2" maxlength="30" placeholder="Nome Completo" autocomplete="name">
+            </div>
+            <div>
+                <label for="icpf">CPF</label>
+                <input type="text" name="cpf" id="icpf" required minlength="14" maxlength="14" placeholder="xxx.xxx.xxx-xx">
+            </div>
+            <div>
+                <label for="icontato1">Contato 1</label>
+                <input type="text" name="contato1" id="icontato1" required minlength="12" maxlength="13" placeholder="(ddd)xxxxxxxxx" autocomplete="tel-national">
+            </div>
+            <div>
+                <label for="icontato2">Contato 2</label>
+                <input type="text" name="contato2" id="icontato2" required minlength="12" maxlength="13" placeholder="(ddd)xxxxxxxxx" autocomplete="tel-national">
+            </div>
+            <div>
+                <label for="iespec">Especialidade</label>
+                <input type="text" name="espec" id="iespec" required maxlength="30" placeholder="Medico, cozinheiro, veterinario">
+            </div>
+            <div>
+                Tipo
+                <input type="radio" name="tipo" id="igestor">
+                <label for="igestor">Gestor</label>
+                <input type="radio" name="tipo" id="ivoluntario" checked>
+                <label for="ivoluntario">Voluntario</label>
+            </div>
+            <div>
+               Veículo
+               <input type="radio" name="veiculo" id="isim">
+               <label for="isim">Sim</label>
+               <input type="radio" name="veiculo" id="inao" checked>
+               <label for="inao">Não</label>
+            </div>
+            <div>
+               Disponibilidade:
+               <input type="checkbox" name="disp" id="idom">
+               <label for="idom">Dom</label>
+               <input type="checkbox" name="disp" id="iseg">
+               <label for="iseg">Seg</label>
+               <input type="checkbox" name="disp" id="iter">
+               <label for="iter">Ter</label>
+               <input type="checkbox" name="disp" id="iqua">
+               <label for="iqua">Qua</label>
+               <input type="checkbox" name="disp" id="iqui">
+               <label for="iqui">Qui</label>
+               <input type="checkbox" name="disp" id="isex">
+               <label for="isex">Sex</label>
+               <input type="checkbox" name="disp" id="isab">
+               <label for="isab">Sab</label>
+            </div>
+            <div>
+                Turno:
+                <input type="checkbox" name="turno" id="imanha">
+                <label for="imanha">Manhã</label>
+                <input type="checkbox" name="turno" id="itarde">
+                <label for="itarde">Tarde</label>
+                <input type="checkbox" name="turno" id="inoite">
+                <label for="inoite">Noite</label>
+            </div>
+            <div>
+                <label for="iobs">Observação</label>
+                <input type="text" name="obs" id="iobs" maxlength="200"
+                placeholder="Opcional">
+            </div>
+            <div>
+                <input type="submit" value="Salvar">
+                <input type="reset" value="Limpar">
+            </div>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

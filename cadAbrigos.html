@@ -15,6 +15,10 @@
                 <fieldset>
                     <legend>Abrigos</legend>
                     <div>
+                        <label for="inomeAbrig">Nome do Abrigo</label>
+                        <input type="text" name="nomeAbrig" id="inomeAbrig" required minlength="2" maxlength="50" placeholder="Nome completo">
+                    </div>
+                    <div>
                         <label for="iendereco">Endereço</label>
                         <input type="text" name="endereco" id="iendereco" required maxlength="200"  placeholder="rua, numero, bairro, cidade">
                     </div>
@@ -50,11 +54,10 @@
                         <label for="inao">Não</label>
                     </div>
                     <div>
-                        Banheiros
-                        <input type="radio" name="banheiro" id="ibanheiroSim" checked value="S">
-                        <label for="ibanheiroSim">Sim</label>
-                        <input type="radio" name="banheiro" id="ibanheiroNao">
-                        <label for="ibanheiroNao">Não</label>
+                        <label for="ibanheiro">Banheiros</label>
+                        <input type="number" name="banheiro" id="ibanheiro"
+                        required min="0" placeholder="Quantidade de banheiro">
+                        
                     </div>
                     <div>
                         <label for="iobs">Observação</label>
