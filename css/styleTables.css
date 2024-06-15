@@ -1,0 +1,38 @@
+table{
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+caption{
+   
+    background-color: black;
+    color: white;
+    padding: 5px;
+}
+tr:nth-child(even){
+    background-color: rgb(206, 206, 205);
+}
+thead > tr > th{
+    background-color: grey;
+}
+tr > th,td{
+    border: 2px solid black;
+    padding: 15px;
+}
+div.container{
+    overflow-x: auto;
+
+}
+nav > a{
+    text-decoration: none;
+    border: 2px solid black;
+    padding: 10px;
+    margin: 15px;
+    background-color: green;
+    color: aliceblue;
+    border-radius: 10px;
+
+}
+nav > a:hover{
+    background-color: rgb(68, 102, 17);
+    color: aqua;
+}
